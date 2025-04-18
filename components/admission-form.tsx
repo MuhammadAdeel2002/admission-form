@@ -356,7 +356,7 @@ export default function AdmissionForm() {
 
                 <div>
                   <Label htmlFor="classLevel" className="block mb-1 text-gray-700">
-                    Class Level <span className="text-red-500">*</span>
+                    Select Program <span className="text-red-500">*</span>
                   </Label>
                   <Select
                     value={formData.classLevel}
@@ -366,13 +366,10 @@ export default function AdmissionForm() {
                       <SelectValue placeholder="Select Class" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="nursery">Nursery</SelectItem>
-                      <SelectItem value="kg">Kindergarten</SelectItem>
-                      <SelectItem value="1">Class 1</SelectItem>
-                      <SelectItem value="2">Class 2</SelectItem>
-                      <SelectItem value="3">Class 3</SelectItem>
-                      <SelectItem value="4">Class 4</SelectItem>
-                      <SelectItem value="5">Class 5</SelectItem>
+                      <SelectItem value="nursery">BSN 4-year program</SelectItem>
+                      <SelectItem value="kg">BSN 4-year program (FOR OVERSEAS STUDENT)</SelectItem>
+                      <SelectItem value="1">Post-RN BSN 2-year Program</SelectItem>
+                      
                     </SelectContent>
                   </Select>
                   {errors.classLevel && <p className="text-red-500 text-sm mt-1">{errors.classLevel}</p>}
